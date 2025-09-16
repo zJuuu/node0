@@ -1,0 +1,5 @@
+{
+    "run_config": "llama_8B_C",
+    "auth_server": "https://auth.pluralis.ai",
+    "seeds": ["/ip4/34.215.69.49/tcp/49200/p2p/QmQQc9r9pKF5hw3MbXHqRhGAHh4JZKiuv1hCenmGKV9e2Y", "/ip4/54.70.227.132/tcp/49200/p2p/QmSzC8yq5yqhiTjP2gRaTaUZbjik2ZrdbCc8rP7dXRdP21", "/ip4/34.208.159.142/tcp/49200/p2p/QmNY87dq6tmNXZJhWYddyA5WbVLY6FEktU1QTXdraYCSa3", "/ip4/35.89.245.43/tcp/49200/p2p/QmcRSpPVX3itcEedowDdLrSdSN7kMTC8jkkbTN5UYsoRH4"]
+}
