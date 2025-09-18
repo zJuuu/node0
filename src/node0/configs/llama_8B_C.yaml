@@ -45,6 +45,6 @@ averaging_timeout: 120
 request_timeout: 3
 sparse_avg: 0.05
 average_state_every: 5
-load_state_timeout: 480
+load_state_timeout: 300
 max_allowed_stale: 5
 num_dht: 5
