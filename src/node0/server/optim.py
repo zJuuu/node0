@@ -100,6 +100,7 @@ class AutoStepOptimizer(Optimizer):
             next_chunk_timeout=self.next_chunk_timeout,
             client_mode=self.client_mode,
             auxiliary=self.auxiliary,
+            allow_state_sharing=False,
             start=True,
             **kwargs,
         )
@@ -117,6 +118,7 @@ class AutoStepOptimizer(Optimizer):
             next_chunk_timeout=self.next_chunk_timeout,
             client_mode=self.client_mode,
             auxiliary=self.auxiliary,
+            allow_state_sharing=False,
             start=True,
             **kwargs,
         )
@@ -167,7 +169,7 @@ class AutoStepOptimizer(Optimizer):
                 batch_size = 1
                 self._step(batch_size=batch_size)
 
-            self.state_averager.allow_state_sharing = True
+            # self.state_averager.allow_state_sharing = True
         except Exception as e:
             logger.error(f"Error in auto step: {e}")
 
@@ -183,7 +185,7 @@ class AutoStepOptimizer(Optimizer):
                 return None
 
             self._step(batch_size=batch_size)
-            self.state_averager.allow_state_sharing = True
+            # self.state_averager.allow_state_sharing = True
 
             self._last_step_time = time.time()
 
