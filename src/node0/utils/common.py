@@ -85,7 +85,7 @@ def infer_expert_params(
         raise ValueError("Wrong stage type. It should be one of: head-X, body-X, tail-X (X is int).") from e
 
     stage_idx_for_pattern = "" if stage in ["head", "tail"] else stage_idx
-    expert_pattern = f"{stage}{stage_idx_for_pattern}.0.[0:{max_experts}]"
+    expert_pattern = f"{stage}{stage_idx_for_pattern}.0.[32:{max_experts}]"
     stage_name = f"{stage}{stage_idx_for_pattern}.0."
     expert_class = f"lm_{stage}"
 
