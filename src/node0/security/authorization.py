@@ -144,7 +144,7 @@ class PluralisAuthorizer(TokenAuthorizerBase):
                 "announce_port": self._announce_port,
             }
 
-            if initial_join:
+            if initial_join and self._check_integrity:
                 with TestServer(port=self._host_port) as server:
                     response = requests.put(
                         url,
